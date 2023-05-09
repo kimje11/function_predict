@@ -17,7 +17,6 @@ warnings.filterwarnings(action='ignore')
 path = '/app/function_predict/NanumGothic.ttf' # 나눔 고딕
 font_name = fm.FontProperties(fname=path, size=10).get_name() # 기본 폰트 사이즈 : 10
 plt.rc('font', family=font_name)
-fm._rebuild()
 
 
 def create_dict(number, title):
