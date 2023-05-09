@@ -230,7 +230,7 @@ else:
             
             # equation = f'인공지능 예측함수: y = {z[0]:.2f}x + {z[1]:.2f}'
             # ax.annotate(equation, xy=(0.05, 0.95), xycoords='axes fraction', fontsize=12, ha='left', va='top')
-            exp_equation = f"나의 예측: y={exp_a}*{exp_b}^x, RMSE: {exp_rmse:.2f}"
+            exp_equation = f"my_predict: y={exp_a}*{exp_b}^x, RMSE: {exp_rmse:.2f}"
             # exp_equation = f"나의 예측: y={a}x+{b}, RMSE: {exp_rmse:.2f}"
             # ax.annotate(equation, xy=(0.05, 0.95), xycoords='axes fraction', fontsize=12, ha='left', va='top')
             ax.annotate(exp_equation, xy=(0.05, 0.95), xycoords='axes fraction',  fontsize=12, va='top', ha='left', bbox=dict(boxstyle='round', fc='w'))
@@ -288,7 +288,7 @@ else:
             ai_rmse = np.sqrt(mean_squared_error(decimal_y, decimal_y_pred))
             # ax.plot(x, y)
             if not check6:
-                equation = f"나의 예측: y={a}x+{b}, RMSE: {rmse:.2f}"
+                equation = f"my_predict: y={a}x+{b}, RMSE: {rmse:.2f}"
                 # ax.annotate(equation, xy=(0.05, 0.95), xycoords='axes fraction', fontsize=12, ha='left', va='top')
                 ax.annotate(equation, xy=(0.05, 0.95), xycoords='axes fraction',  fontsize=12, va='top', ha='left', bbox=dict(boxstyle='round', fc='w'))
                 # equation2=(f"RMSE: {rmse:.2f}")
