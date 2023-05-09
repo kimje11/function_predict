@@ -8,7 +8,7 @@ import string
 import math
 from sklearn.metrics import mean_squared_error
 from decimal import Decimal
-from matplotlib_font_manager import FontManager
+
 
 def create_dict(number, title):
     # 변수의 수에 따라 알파벳 순서대로 키 생성
@@ -56,10 +56,16 @@ def dynamic_slider(min_val, max_val,name):
 #______________________폰트 깨짐__________________________________
 
 
+import matplotlib.font_manager as fm
 
-font_manager = FontManager()
-font_manager.get_font("NanumGothic", "Light")  # 폰트 이름과 스타일을 지정합니다.
-font_manager.set_default_font("NanumGothic", "Light")  # 기본 폰트로 설정합니다.
+# 폰트 경로 설정
+font_path = '/NanumGothic.ttf'
+
+# FontProperties 인스턴스 생성
+font_prop = fm.FontProperties(fname=font_path, size=12)
+
+plt.rc('font', family=font_prop.get_name())
+
 
 #초기 리스트 정리
 title_count = st.session_state.get("title_count", 0)
