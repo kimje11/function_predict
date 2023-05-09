@@ -9,7 +9,12 @@ import math
 from sklearn.metrics import mean_squared_error
 from decimal import Decimal
 
+import matplotlib.font_manager as fm
 
+# 시스템에 설치된 모든 폰트의 경로를 출력합니다.
+for font_path in fm.get_fontconfig_fonts():
+    print(font_path)
+    
 def create_dict(number, title):
     # 변수의 수에 따라 알파벳 순서대로 키 생성
     # keys = list(string.ascii_uppercase)[:num_vars]
