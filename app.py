@@ -10,9 +10,6 @@ from sklearn.metrics import mean_squared_error
 from decimal import Decimal
 
 
-!apt-get update -qq
-!apt-get install fonts-nanum* -qq
-
 import matplotlib.font_manager as fm
 import warnings
 warnings.filterwarnings(action='ignore') 
