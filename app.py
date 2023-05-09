@@ -62,11 +62,9 @@ def dynamic_slider(min_val, max_val,name):
 import matplotlib.font_manager as fm
 
 # 폰트 경로 설정
-font_path = 'NanumGothic.ttf'
-
+font_path = './NanumGothic.ttf'
 # FontProperties 인스턴스 생성
 font_prop = fm.FontProperties(fname=font_path, size=10)
-
 plt.rc('font', family=font_prop.get_name())
 import os
 print(" 경로")
