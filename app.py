@@ -8,7 +8,7 @@ import string
 import math
 from sklearn.metrics import mean_squared_error
 from decimal import Decimal
-
+from matplotlib_font_manager import FontManager
 
 def create_dict(number, title):
     # 변수의 수에 따라 알파벳 순서대로 키 생성
