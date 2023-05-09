@@ -68,9 +68,9 @@ def dynamic_slider(min_val, max_val,name):
 # font_prop = fm.FontProperties(fname=font_path, size=12)
 
 # plt.rc('font', family=font_prop.get_name())
-from matplotlib import rc
-import matplotlib
-matplotlib.rcParams['font.family'] = 'Malgun Gothic'
+import os
+print(" 경로")
+print(os.getcwd())
 
 #초기 리스트 정리
 title_count = st.session_state.get("title_count", 0)
