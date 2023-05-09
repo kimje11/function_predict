@@ -9,11 +9,20 @@ import math
 from sklearn.metrics import mean_squared_error
 from decimal import Decimal
 
-import matplotlib.font_manager as fm
+
+!apt-get update -qq
+!apt-get install fonts-nanum* -qq
 
 import matplotlib.font_manager as fm
-fontlist = fm.findSystemFonts(fontpaths=None, fontext='ttf')
-print('폰트리스트',fontlist)
+import warnings
+warnings.filterwarnings(action='ignore') 
+
+path = '/usr/share/fonts/truetype/nanum/NanumGothic.ttf' # 나눔 고딕
+font_name = fm.FontProperties(fname=path, size=10).get_name() # 기본 폰트 사이즈 : 10
+plt.rc('font', family=font_name)
+fm._rebuild()
+
+
 def create_dict(number, title):
     # 변수의 수에 따라 알파벳 순서대로 키 생성
     # keys = list(string.ascii_uppercase)[:num_vars]
