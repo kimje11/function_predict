@@ -60,20 +60,18 @@ def dynamic_slider(min_val, max_val,name):
 
 
 import matplotlib.font_manager as fm
+import os
 
 # 폰트 경로 설정
-font_path = './NanumGothic.ttf'
+# 현재 작업 중인 디렉토리의 파일과 폴더를 나열합니다.
+files_and_directories = os.listdir()
+font_path = files_and_directoried[5]
+print(font_path)
 # FontProperties 인스턴스 생성
 font_prop = fm.FontProperties(fname=font_path, size=10)
 plt.rc('font', family=font_prop.get_name())
-import os
 
-# 현재 작업 중인 디렉토리의 파일과 폴더를 나열합니다.
-files_and_directories = os.listdir()
 
-# 파일과 폴더를 출력합니다.
-for item in files_and_directories:
-    print(item)
 
 #초기 리스트 정리
 title_count = st.session_state.get("title_count", 0)
