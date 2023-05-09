@@ -13,7 +13,7 @@ import matplotlib.font_manager as fm
 
 import matplotlib.font_manager as fm
 fontlist = fm.findSystemFonts(fontpaths=None, fontext='ttf')
-print(fontlist)
+print('폰트리스트',fontlist)
 def create_dict(number, title):
     # 변수의 수에 따라 알파벳 순서대로 키 생성
     # keys = list(string.ascii_uppercase)[:num_vars]
