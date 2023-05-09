@@ -10,13 +10,7 @@ from sklearn.metrics import mean_squared_error
 from decimal import Decimal
 
 
-import matplotlib.font_manager as fm
-import warnings
-warnings.filterwarnings(action='ignore') 
 
-path = '/app/function_predict/NanumGothic.ttf' # 나눔 고딕
-font_name = fm.FontProperties(fname=path, size=10).get_name() # 기본 폰트 사이즈 : 10
-plt.rc('font', family=font_name)
 
 
 def create_dict(number, title):
@@ -77,7 +71,7 @@ def dynamic_slider(min_val, max_val,name):
 import matplotlib.font_manager as form
 font_list = [font.name for font in form.fontManager.ttflist]
 for f in font_list:
-    priont(f)
+    print(f)
 
 #초기 리스트 정리
 title_count = st.session_state.get("title_count", 0)
