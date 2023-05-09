@@ -14,7 +14,7 @@ import matplotlib.font_manager as fm
 import warnings
 warnings.filterwarnings(action='ignore') 
 
-path = '/usr/share/fonts/truetype/nanum/NanumGothic.ttf' # 나눔 고딕
+path = '/app/function_predict/NanumGothic.ttf' # 나눔 고딕
 font_name = fm.FontProperties(fname=path, size=10).get_name() # 기본 폰트 사이즈 : 10
 plt.rc('font', family=font_name)
 fm._rebuild()
@@ -66,15 +66,15 @@ def dynamic_slider(min_val, max_val,name):
 #______________________폰트 깨짐__________________________________
 
 
-import matplotlib.font_manager as fm
+# import matplotlib.font_manager as fm
 
-# 폰트 경로 설정
-font_path = '/app/function_predict/NanumGothic.ttf'
+# # 폰트 경로 설정
+# font_path = '/app/function_predict/NanumGothic.ttf'
 
-# FontProperties 인스턴스 생성
-font_prop = fm.FontProperties(fname=font_path, size=12)
+# # FontProperties 인스턴스 생성
+# font_prop = fm.FontProperties(fname=font_path, size=12)
 
-plt.rc('font', family=font_prop.get_name())
+# plt.rc('font', family=font_prop.get_name())
 
 
 #초기 리스트 정리
