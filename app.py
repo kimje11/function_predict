@@ -65,7 +65,7 @@ import os
 # 폰트 경로 설정
 # 현재 작업 중인 디렉토리의 파일과 폴더를 나열합니다.
 files_and_directories = os.listdir()
-font_path = files_and_directoried[5]
+font_path = files_and_directories[5]
 print(font_path)
 # FontProperties 인스턴스 생성
 font_prop = fm.FontProperties(fname=font_path, size=10)
