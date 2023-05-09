@@ -59,8 +59,10 @@ def dynamic_slider(min_val, max_val,name):
 #______________________폰트 깨짐__________________________________
 
 
-import matplotlib.font_manager as fm
 import os
+import matplotlib.pyplot as plt
+import matplotlib.font_manager as fm
+from matplotlib import rcParams
 
 # # 폰트 경로 설정
 # # 현재 작업 중인 디렉토리의 파일과 폴더를 나열합니다.
