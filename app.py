@@ -71,7 +71,7 @@ import os
 # font_prop = fm.FontProperties(fname=font_path, size=10)
 # plt.rc('font', family=font_prop.get_name())
 
-fpath = os.path.join(os.getcwd(), “NanumGothic.ttf”)
+fpath = os.path.join(os.getcwd(), "NanumGothic.ttf")
 prop = fm.FontProperties(fname=fpath)
 font_dir = [‘app/function_predict’]
 for font in fm.findSystemFonts(font_dir):
