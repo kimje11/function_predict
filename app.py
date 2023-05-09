@@ -74,7 +74,10 @@ def dynamic_slider(min_val, max_val,name):
 # font_prop = fm.FontProperties(fname=font_path, size=12)
 
 # plt.rc('font', family=font_prop.get_name())
-
+import matplotlib.font_manager as form
+font_list = [font.name for font in form.fontManager.ttflist]
+for f in font_list:
+    priont(f)
 
 #초기 리스트 정리
 title_count = st.session_state.get("title_count", 0)
