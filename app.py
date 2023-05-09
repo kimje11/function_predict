@@ -72,14 +72,13 @@ from matplotlib import rcParams
 # # FontProperties 인스턴스 생성
 # font_prop = fm.FontProperties(fname=font_path, size=10)
 # plt.rc('font', family=font_prop.get_name())
-
-fpath = os.path.join(os.getcwd(), "NanumGothic.ttf")
+print("?",os.getcwd)
+fpath = os.path.join(os.getcwd(), 'NanumGothic.ttf')
 prop = fm.FontProperties(fname=fpath)
 font_dir = ['app/function_predict']
 for font in fm.findSystemFonts(font_dir):
     fm.fontManager.addfont(font)
-rcParams['font.family'] ='NanumGhothic'
-
+rcParams['font.family'] = 'NanumGhothic
 
 #초기 리스트 정리
 title_count = st.session_state.get("title_count", 0)
