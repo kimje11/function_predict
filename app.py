@@ -79,7 +79,7 @@ font_dir = ['app/function_predict']
 for font in fm.findSystemFonts(font_dir):
     fm.fontManager.addfont(font)
     print(font)
-rcParams['font.family'] = 'NanumGhothic
+rcParams['font.family'] = 'NanumGhothic'
 
 #초기 리스트 정리
 title_count = st.session_state.get("title_count", 0)
