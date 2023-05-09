@@ -62,15 +62,21 @@ def dynamic_slider(min_val, max_val,name):
 import matplotlib.font_manager as fm
 import os
 
-# 폰트 경로 설정
-# 현재 작업 중인 디렉토리의 파일과 폴더를 나열합니다.
-files_and_directories = os.listdir()
-font_path = files_and_directories[5]
-print(font_path)
-# FontProperties 인스턴스 생성
-font_prop = fm.FontProperties(fname=font_path, size=10)
-plt.rc('font', family=font_prop.get_name())
+# # 폰트 경로 설정
+# # 현재 작업 중인 디렉토리의 파일과 폴더를 나열합니다.
+# files_and_directories = os.listdir()
+# font_path = files_and_directories[5]
+# print(font_path)
+# # FontProperties 인스턴스 생성
+# font_prop = fm.FontProperties(fname=font_path, size=10)
+# plt.rc('font', family=font_prop.get_name())
 
+fpath = os.path.join(os.getcwd(), “NanumGothic.ttf”)
+prop = fm.FontProperties(fname=fpath)
+font_dir = [‘app/function_predict’]
+for font in fm.findSystemFonts(font_dir):
+    fm.fontManager.addfont(font)
+rcParams[‘font.family’] = ‘NanumGhothic’
 
 
 #초기 리스트 정리
